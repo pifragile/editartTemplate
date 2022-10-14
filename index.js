@@ -1,28 +1,18 @@
-let pg;
-let cs = 2000;
+// DRAW YOUR ART in drawArt() using p5js functions
+// Draw on graphics object pg which has a size of cs x cs.
+// You dont have to worry about window resizing.
+// Do not override the p5js setup function, everything has to be done in drawArt.
 
-function setup() {
-    is = min(windowHeight, windowWidth);
-    createCanvas(is, is);
-    pg = createGraphics(cs, cs);
-    pg.colorMode(HSB);
-    pg.pixelDensity(1);
-}
+// Available variables:
+// pg: graphics object to draw on
+// cs: canvas size
+// m0, m1, m2, m3, m4 slider values
 
-function setImage() {
-    clear();
-    is = min(windowHeight, windowWidth);
-    resizeCanvas(is, is);
-    copy(pg, 0, 0, cs, cs, 0, 0, is, is);
-}
+// IMPORTANT: every single part of the output must ONLY be dependent on the values m0..m4.
 
+// if you need randomness, you can use the functions randomM0()..randomM4()
+// these functions provide randomness seeded by the respective values m0..m4
 function drawArt() {
-    // DRAW YOUR ART HERE using p5js
-    // using the variables m0, m1, m2, m3, m4
-    // every single part of the output must ONLY be dependent on the values m0..m4.
-    // if you need randomness, you can use the functions randomM0()..randomM4()
-    // these functions provide randomness seeded by the respective values m0..m4
-
     // Example:
     pg.noStroke();
     pg.background(m0 * 360, 100, 100);
@@ -31,21 +21,4 @@ function drawArt() {
     for (let i = 0; i < 200; i++) {
         pg.circle(randomM4() * cs, randomM4() * cs, randomM4() * cs * 0.01);
     }
-
-}
-function draw() {
-    noLoop();
-    pg.clear();
-    drawArt();
-    setImage();
-}
-
-function keyPressed() {
-    if (keyCode === LEFT_ARROW) {
-        save();
-    }
-}
-
-function windowResized() {
-    setImage();
 }
