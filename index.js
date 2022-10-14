@@ -21,7 +21,6 @@ function drawArt() {
     // using the variables m0, m1, m2, m3, m4
 
     // Example:
-    pg.clear();
     pg.noStroke();
     pg.background(m0 * 360, 100, 100);
     pg.fill(m1 * 360, 100, 100);
@@ -29,6 +28,7 @@ function drawArt() {
 }
 function draw() {
     noLoop();
+    pg.clear();
     drawArt();
     setImage();
 }
