@@ -50,7 +50,7 @@ window.addEventListener("message", (e) => {
 });
 
 function getRNG(num) {
-    return sfc32(...cyrb128(num.toString()));
+    return sfc32(...cyrb128(randomSeed + num.toString()));
 }
 
 function seedRandomness() {
