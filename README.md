@@ -32,4 +32,4 @@ In order to test your project with the EditART platform, start a local developme
 
 
 ## Project ready or questions?
-Is you have a finished project or any questions, send me a DM on twitter [@pifragile](https://twitter.com/pifragile). Looking forward to your project!
+Is you have a finished project or any questions, send me a DM on twitter [@pifragile](https://twitter.com/pifragile). Looking forward to hearing from you!
