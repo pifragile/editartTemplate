@@ -1,5 +1,4 @@
-# Instructions
-
+# EditART Template Instructions
 ## Create your art
 ### Do:
 - Draw your art in `drawArt()` in `index.js` using p5js functions.
@@ -14,6 +13,8 @@
 - Don't edit any files other than `index.js` and `index.html`. They will be reset to default before deployment.
 
 
+> **_IMPORTANT:_** Every single part of the output must ONLY depend on the values `m0`..`m4`. Otherwise the pieces will change after minting.
+
 ## Available variables
 - `pg`: graphics object to draw on
 - `cs`: canvas size
@@ -25,7 +26,9 @@ If you need randomness, you can use the functions `randomM0()`..`randomM4()`
 these functions provide randomness seeded by the respective values `m0`..`m4`.  
 > **_NOTE:_** You can set the `randomSeed` variable in `index.html` to any string you like in order to distinguish your randomness from the one of other projects.
 
+## Testing
+In order to test your project with the EditART platform, start a local development server of your project and paste its address in [the sandbox](https://www.editart.xyz/sandbox) and you can start playing around with the sliders.
 
-## IMPORTANT
-> Every single part of the output must ONLY depend on the values `m0`..`m4`. Otherwise the pieces will change after minting.
 
+## Project ready or questions?
+Is you have a finished project or any questions, send me a DM on twitter [@pifragile](https://twitter.com/pifragile). Looking forward to your project!
