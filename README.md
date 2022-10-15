@@ -11,6 +11,7 @@
 - You dont have to worry about window resizing.
 - Don't use any source of randomness other than the one described below.
 - Don't edit any files other than `index.js` and `index.html`. They will be reset to default before deployment.
+- If you use any libraries, include all source files in the project. Do not load any dependencies from the internet.
 
 
 > **_IMPORTANT:_** Every single part of the output must ONLY depend on the values `m0`..`m4`. Otherwise the pieces will change after minting.
