@@ -7,8 +7,8 @@
 - Make a sketch that renders fast for the best user experience.
 
 ### Don't:
-- Do not override the p5js setup function, everything has to be done in drawArt.
-- You dont have to worry about window resizing.
+- Do not override the p5js `setup` or `draw` function, everything has to be done in `drawArt`.
+- You dont have to worry about window resizing, do not override the `windowResized` function.
 - Don't use any source of randomness other than the one described below.
 - Don't edit any files other than `index.js` and `index.html`. They will be reset to default before deployment.
 - If you use any libraries, include all source files in the project. Do not load any dependencies from the internet.
