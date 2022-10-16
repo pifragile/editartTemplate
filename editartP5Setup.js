@@ -6,7 +6,7 @@ let cs = 2000;
 
 
 function draw() {
-    noLoop();
+    seedRandomness();
     pg.clear();
     drawArt();
     setImage();
@@ -23,6 +23,7 @@ function windowResized() {
 }
 
 function setup() {
+    noLoop();
     is = min(windowHeight, windowWidth);
     createCanvas(is, is);
     pg = createGraphics(cs, cs);

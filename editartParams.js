@@ -18,7 +18,6 @@ console.log(queryString);
 if (queryString) {
     getParams(queryString);
 }
-seedRandomness();
 
 function truncate(i) {
     return Math.max(Math.min(i, 1), 0);
@@ -41,11 +40,9 @@ function getParams(queryString) {
 }
 window.addEventListener("message", (e) => {
     var data = e.data;
-
     if ("editartQueryString" in data) {
         getParams(data["editartQueryString"]);
-        seedRandomness();
-        draw();
+        draw()
     }
 });
 
