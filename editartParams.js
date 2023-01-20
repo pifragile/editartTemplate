@@ -20,7 +20,7 @@ if (queryString) {
 }
 
 function truncate(i) {
-    return Math.max(Math.min(i, 1), 0);
+    return Math.max(Math.min(i, 0.99999999), 0);
 }
 function getParam(urlParams, p) {
     const param = urlParams.get(p);
