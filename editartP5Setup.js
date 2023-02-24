@@ -10,6 +10,7 @@ function draw() {
     pg.clear();
     drawArt();
     setImage();
+    triggerPreview();
     parent.postMessage("editArtSketchLoaded", "*");
 }
 
