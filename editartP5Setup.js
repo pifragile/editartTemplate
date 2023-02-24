@@ -10,6 +10,7 @@ function draw() {
     pg.clear();
     drawArt();
     setImage();
+    parent.postMessage("editArtSketchLoaded", "*");
 }
 
 function keyPressed() {
