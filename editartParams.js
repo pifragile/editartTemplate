@@ -42,9 +42,9 @@ function getParams(queryString) {
 }
 window.addEventListener("message", (e) => {
     var data = e.data;
-    if ("editartQueryString" in data) {
+    if (data.hasOwnProperty("editartQueryString")) {
         getParams(data["editartQueryString"]);
-        draw()
+        draw();
     }
 });
 
