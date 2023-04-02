@@ -36,6 +36,6 @@ function setup() {
 function setImage() {
     clear();
     is = min(windowHeight, windowWidth);
-    resizeCanvas(is, is);
+    resizeCanvas(is, is, true);
     copy(pg, 0, 0, cs, cs, 0, 0, is, is);
 }
